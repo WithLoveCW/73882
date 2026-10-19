@@ -56,16 +56,16 @@
     z-index: 0;
   }
 
-  /* ===== MESSAGE GROUP POSITION (Lowered & Tightened) ===== */
+  /* ===== MESSAGE GROUP POSITION ===== */
   #messageGroup {
     position: absolute;
 
-    /* POSITION INSIDE THE TICKET - moved down from 66% to 68.5% */
-    top: 69.5%;
+    /* POSITION INSIDE THE TICKET - set to 69% for optimal vertical centering */
+    top: 69%;
     left: 50%;
 
     /* WIDTH OF TEXT AREA */
-    width: 75%;
+    width: 72%;
 
     /* CENTRED - NO ROTATION */
     transform: translate(-50%, -50%);
@@ -78,19 +78,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px; /* Decreased from 10px to tighten spacing */
+    gap: 5px;
 
     text-align: center;
   }
 
-  /* ===== MAIN MESSAGE (Adjusted Size & Burgundy) ===== */
+  /* ===== MAIN MESSAGE (Slightly smaller to prevent overflow) ===== */
   #mainMessage {
     position: relative;
     width: 100%;
     margin: 0;
 
     font-family: 'Aesthet', serif;
-    font-size: 31px; /* Slightly decreased from 34px to fit better */
+    font-size: 27px; /* Decreased from 31px to give margin on sides */
     line-height: 1.1;
 
     color: #8b0000; /* Deep Burgundy Red */
@@ -98,13 +98,13 @@
     overflow-wrap: break-word;
   }
 
-  /* ===== SECONDARY MESSAGE (Adjusted Size & Green) ===== */
+  /* ===== SECONDARY MESSAGE ===== */
   #secondaryMessage {
     width: 90%;
     margin: 0;
 
     font-family: 'Aesthet', serif;
-    font-size: 21px; /* Slightly decreased from 22px */
+    font-size: 19px; /* Decreased from 21px */
     line-height: 1.15;
 
     color: #198754; /* Festive Green */
