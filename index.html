@@ -60,14 +60,12 @@
   #messageGroup {
     position: absolute;
 
-    /* POSITION INSIDE THE TICKET - set to 69% for optimal vertical centering */
     top: 69%;
     left: 50%;
 
-    /* WIDTH OF TEXT AREA */
-    width: 72%;
+    /* Constrained width forces clean, balanced line wraps */
+    width: 65%;
 
-    /* CENTRED - NO ROTATION */
     transform: translate(-50%, -50%);
     transform-origin: center center;
 
@@ -83,15 +81,16 @@
     text-align: center;
   }
 
-  /* ===== MAIN MESSAGE (Slightly smaller to prevent overflow) ===== */
+  /* ===== MAIN MESSAGE ===== */
   #mainMessage {
     position: relative;
     width: 100%;
-    margin: 0;
+    max-width: 13ch; /* Forces text to break into balanced lines instead of trailing single words */
+    margin: 0 auto;
 
     font-family: 'Aesthet', serif;
-    font-size: 27px; /* Decreased from 31px to give margin on sides */
-    line-height: 1.1;
+    font-size: 27px;
+    line-height: 1.15;
 
     color: #8b0000; /* Deep Burgundy Red */
 
@@ -104,7 +103,7 @@
     margin: 0;
 
     font-family: 'Aesthet', serif;
-    font-size: 19px; /* Decreased from 21px */
+    font-size: 19px;
     line-height: 1.15;
 
     color: #198754; /* Festive Green */
